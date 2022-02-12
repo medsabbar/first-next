@@ -11,6 +11,7 @@
 	display: flex;
 	justify-content: space-between;
 	font-size: 1.2rem;
+	z-index: 1;
 }
 
 .others {
@@ -25,4 +26,10 @@
 }
 .homepage a:hover {
 	opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) {
+	.navbar {
+		padding: 10px 10px;
+	}
 }
