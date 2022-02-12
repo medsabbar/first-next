@@ -1,26 +1,41 @@
-import Link from 'next/link';
+import MeetupList from '../components/meetups/MeetupList';
+import { MongoClient } from 'mongodb';
 import { Fragment } from 'react';
+import Head from 'next/head';
 
-const data = {
-	new: 'new',
-	remove: 'remove',
-};
-
-function Home(props) {
+function HomePage(props) {
 	return (
 		<Fragment>
-			<Link href="/new">{props.data.new}</Link>
-			<br />
-			<Link href="/remove">{props.data.remove}</Link>
+			<Head>
+				<title>React Mettup App</title>
+			</Head>
+			<MeetupList meetups={props.meetups} />
 		</Fragment>
 	);
 }
 
-export function getStaticProps(context) {
+export async function getStaticProps() {
+	const client = await MongoClient.connect(
+		'mongodb+srv://Sabbar:WAckZaykYsiBbNGU@cluster0.jh8gq.mongodb.net/meetups?retryWrites=true&w=majority'
+	);
+	const db = client.db();
+
+	const meetupsCollection = db.collection('meetups');
+
+	const meetups = await meetupsCollection.find().toArray();
+
+	client.close();
 	return {
-		props: { data: data },
+		props: {
+			meetups: meetups.map((meetup) => ({
+				title: meetup.title,
+				address: meetup.address,
+				image: meetup.image,
+				id: meetup._id.toString(),
+			})),
+		},
 		revalidate: 1,
 	};
 }
 
-export default Home;
+export default HomePage;

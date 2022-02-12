@@ -1,0 +1,10 @@
+.meetuplist {
+	margin-top: 80px;
+	display: grid;
+	grid-template-columns: repeat(1, auto);
+	gap: 20px;
+	text-align: center;
+}
+.meetuplist img {
+	width: 100%;
+}

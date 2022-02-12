@@ -1,0 +1,28 @@
+.navbar {
+	margin: 0px;
+	background-color: #196602;
+	padding: 20px 90px;
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	color: aliceblue;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.2rem;
+}
+
+.others {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	font-size: 1rem;
+	font-weight: 400;
+}
+.others a:hover {
+	opacity: 0.8;
+}
+.homepage a:hover {
+	opacity: 0.8;
+}
