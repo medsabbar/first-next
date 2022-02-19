@@ -11,4 +11,8 @@ module.exports = withPWA({
 	images: {
 		domains: ['upload.wikimedia.org', 'd1qwqe1acr1rnz.cloudfront.net'],
 	},
+	env: {
+		MONGO_CONNECT:
+			'mongodb+srv://Sabbar:WAckZaykYsiBbNGU@cluster0.jh8gq.mongodb.net/meetups?retryWrites=true&w=majority',
+	},
 });
