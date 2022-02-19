@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import classes from './MeetupItem.module.css';
 
 function MeetupItem(props) {
@@ -10,7 +11,9 @@ function MeetupItem(props) {
 
 	return (
 		<div className={classes.container}>
-			<img src={props.image} alt={props.title} />
+			<div className={classes.imageContainer}>
+				<Image src={props.image} alt={props.title} layout="fill" />
+			</div>
 			<div className={classes.else}>
 				<div>
 					<h3>{props.title}</h3>
