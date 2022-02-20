@@ -6,9 +6,9 @@ import { motion } from 'framer-motion';
 function NavigationBar() {
 	return (
 		<motion.div
-			initial={{ translateY: -60 }}
-			whileInView={{ translateY: 0 }}
-			transition={{ duration: 1 }}
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ duration: 0.5 }}
 			className={classes.navbar}
 		>
 			<div>
