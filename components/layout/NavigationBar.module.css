@@ -1,36 +1,46 @@
 .navbar {
 	margin: 0px;
-	background-color: #196602;
 	padding: 20px 90px;
 	width: 100%;
 	overflow: hidden;
 	position: fixed;
 	top: 0;
-	color: aliceblue;
 	font-weight: bold;
 	display: flex;
 	justify-content: space-between;
 	font-size: 1.2rem;
 	z-index: 1;
 	box-shadow: 0px 1px 4px 0px gray;
+
+	color: white;
+	background-color: #41284f;
 }
 
 .others {
 	display: grid;
+	justify-content: center;
+	align-items: center;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
 	font-size: 1rem;
 	font-weight: 400;
 }
-.others a:hover {
-	opacity: 0.8;
+
+.others h1 {
+	font-size: 1rem;
 }
-.homepage a:hover {
-	opacity: 0.8;
+.homeLink {
+	font-size: 1.4rem;
 }
 
 @media screen and (max-width: 600px) {
 	.navbar {
 		padding: 10px 10px;
+	}
+	.others h1 {
+		font-size: 0.8rem;
+	}
+	.homeLink {
+		font-size: 1rem;
 	}
 }

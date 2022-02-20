@@ -4,6 +4,7 @@ body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	background-image: linear-gradient(90deg, #42275a, #734b6d);
 }
 
 a {
@@ -16,6 +17,7 @@ a {
 }
 
 .loader {
+	margin-top: 45%;
 	z-index: 734298749287493;
 	display: block;
 	margin-left: auto;

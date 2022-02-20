@@ -6,6 +6,8 @@
 	padding-bottom: 20px;
 	position: relative;
 	display: grid;
+	color: white;
+	background-color: #41284f;
 }
 .imageContainer {
 	width: 100%;
@@ -18,8 +20,8 @@
 	border-radius: 10px 10px 0px 0px;
 }
 .button {
-	padding: 10px 20px;
-	background-color: #196602;
+	padding: 10px 25px;
+	background-color: #734b6d;
 	color: aliceblue;
 	font-size: 0.8rem;
 	border: none;

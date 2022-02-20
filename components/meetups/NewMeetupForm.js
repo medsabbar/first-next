@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import classes from './NewMeetupForm.module.css';
 
+import { motion } from 'framer-motion';
+
 function NewMettupForm(props) {
 	const titleInputRef = useRef();
 	const imageInputRef = useRef();
@@ -25,7 +27,13 @@ function NewMettupForm(props) {
 		props.onAddMeetup(meetupDate);
 	}
 	return (
-		<form onSubmit={submitHandler} className={classes.container}>
+		<motion.form
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ duration: 1 }}
+			onSubmit={submitHandler}
+			className={classes.container}
+		>
 			<label htmlFor="title">Meetup Title</label>
 			<br />
 			<input id="title" ref={titleInputRef} type="text" required />
@@ -48,8 +56,14 @@ function NewMettupForm(props) {
 				rows="10"
 			></textarea>
 			<br />
-			<button type="submit">Add Meetup</button>
-		</form>
+			<motion.button
+				whileHover={{ scale: 1.1, cursor: 'pointer' }}
+				whileTap={{ scale: 0.9 }}
+				type="submit"
+			>
+				Add Meetup
+			</motion.button>
+		</motion.form>
 	);
 }
 
