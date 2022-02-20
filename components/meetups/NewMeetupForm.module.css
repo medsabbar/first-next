@@ -35,11 +35,13 @@
 }
 
 .container button {
-	margin-left: 78%;
-	padding: 10px 20px;
-	background-color: #734b6d;
-	color: white;
+	padding: 10px 25px;
+	background-color: #ffffff;
+	color: black;
 	font-size: 0.8rem;
+	font-weight: bold;
 	border: none;
 	border-radius: 5px;
+	margin: 10px;
+	box-shadow: 0px 0px 4px 0px gray;
 }
