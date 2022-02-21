@@ -44,6 +44,7 @@ function EditMeetup({ meetupData, onUpdateMeetup }) {
 		setEntredImage(meetupData.image);
 		setEntredDescription(meetupData.description);
 		setEntredAdress(meetupData.address);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	return (
 		<motion.form
