@@ -103,7 +103,7 @@ function EditMeetup({ meetupData, onUpdateMeetup }) {
 				whileTap={{ scale: 0.9 }}
 				type="submit"
 			>
-				Edit Meetup
+				Update Meetup
 			</motion.button>
 		</motion.form>
 	);

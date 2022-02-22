@@ -35,7 +35,7 @@
 }
 
 .container button {
-	margin-left: 76%;
+	margin-left: 73%;
 	padding: 10px 25px;
 	background-color: #ffffff;
 	color: black;
@@ -64,7 +64,7 @@
 }
 @media screen and (max-width: 600px) {
 	.container button {
-		margin-left: 55%;
+		margin-left: 49%;
 	}
 	.imageContainer {
 		width: 90%;

@@ -44,7 +44,7 @@
 }
 .svg:hover {
 	cursor: pointer;
-	animation: svgAnim 800ms forwards;
+	animation: svgAnim 500ms forwards;
 }
 @keyframes svgAnim {
 	0% {
