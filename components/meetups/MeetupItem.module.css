@@ -44,8 +44,7 @@
 }
 .svg:hover {
 	cursor: pointer;
-	animation: svgAnim 200ms;
-	animation-fill-mode: forwards;
+	animation: svgAnim 800ms forwards;
 }
 @keyframes svgAnim {
 	0% {
